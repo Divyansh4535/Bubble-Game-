@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body>
+    <div class="w-full bg-green-400 flex items-center justify-center h-screen">
+      <div class="panel h-[80vh] w-[80vw] rounded-md overflow-hidden bg-white">
+        <div  
+          class="ptop w-full h-[70px] bg-green-900 flex items-center justify-evenly"
+        >
+          <div class="flex gap-2 items-center ">
+            <h2 class="font-bold text-xl">Hit</h2>
+            <span
+              class="hit size-7 p-auto  bg-white text-green-800 font-semibold text-center rounded-md"
+              ></span
+            >
+          </div>
+          <div class="flex gap-2 items-center">
+            <h2 class="font-bold text-xl">Timer</h2>
+            <span
+              class="timer size-7 p-auto bg-white text-green-800 font-semibold  text-center rounded-md"
+              ></span
+            >
+          </div>
+          <div class="flex gap-2 items-center">
+            <h2 class="font-bold text-xl">Score</h2>
+            <span
+              class="score size-7 bg-white text-green-800 font-semibold p-auto text-center rounded-md"
+              >5</span
+            >
+          </div>
+
+        </div>
+        <div class="pbtm h-[calc(100%-70px)] p-2 flex flex-wrap gap-2 bg-green-200">
+        
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
