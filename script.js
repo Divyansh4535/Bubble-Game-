@@ -1,4 +1,4 @@
-let timer = 3;
+let timer = 30;
 let hitNum = 0;
 let score = 0;
 function makeBubbles() {
@@ -15,8 +15,6 @@ function Target() {
   hitNum = Math.floor(Math.random() * 10);
   document.querySelector(".hit").innerText = hitNum;
 }
-
-
 function runTimer() {
   const stop = setInterval(() => {
     if (timer > 0) {
@@ -32,12 +30,10 @@ function runTimer() {
     }
   }, 1000);
 }
-
-function increaseScore() {
+function increaseScore() {   
   document.querySelector(".score").textContent = score;
   score += 10;
 }
-
 document
   .querySelector(".pbtm")
   .addEventListener("click", function newScore(event) {
@@ -47,7 +43,7 @@ document
       increaseScore();
       makeBubbles();
       Target();
-    } else {
+    } else { 
     }
   });
 
